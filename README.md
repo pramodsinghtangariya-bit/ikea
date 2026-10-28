@@ -120,4 +120,12 @@ rfm['M_Score'] = pd.qcut(rfm['Monetary'], 5, labels=[1, 2, 3, 4, 5]).astype(int)
 
 ---
 
+## How to Reproduce This Project
+
+1. Download the Online Retail II dataset from the UCI Machine Learning Repository
+2. Run the SQL scripts in `01_sql` in order to recreate the cleaned `RetailCleaned` table
+3. Export `RetailCleaned` to CSV and run the notebook in `02_python` to generate the segmented dataset
+4. Open the Power BI file in `03_powerbi` and point it to the exported Excel file to refresh
+
+---
 
